@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:text="Convertitore di valuta"
+        android:textAllCaps="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <Spinner
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:scrollbarSize="@dimen/cardview_compat_inset_shadow"
+                    android:scrollbarStyle="insideInset"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_spinner"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="6dp"
+                    tools:ignore="RtlHardcoded">
+
+                    <EditText
+                        android:id="@+id/input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/grigio"
+                        android:hint="1"
+                        android:inputType="numberDecimal"
+                        android:paddingHorizontal="12dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"
+                    android:paddingHorizontal="20dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/line"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/exchange2"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <Spinner
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:scrollbarSize="@dimen/cardview_compat_inset_shadow"
+                    android:scrollbarStyle="insideInset"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_spinner"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@color/grigio"
+                        android:paddingHorizontal="12dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp"
+                        android:hint="1"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="none"
+                        tools:ignore="RtlCompat" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

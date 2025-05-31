@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "772370374088",
+    "project_id": "currencywallet-d99a5",
+    "storage_bucket": "currencywallet-d99a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772370374088:android:4021cf5a45fcf9513574fd",
+        "android_client_info": {
+          "package_name": "com.example.currency_converter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrXb7h0BkowU_X4oRpaUWrFib6f16Krj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
